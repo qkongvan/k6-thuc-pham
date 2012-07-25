@@ -50,7 +50,8 @@ class ProductCategoriesWidget extends HWidget
 	
 	private function __getListChilds($childrens)
 	{
-		$html = CHtml::openTag('ul');
+		if (!count($childrens)) return '';
+		$html = CHtml::openTag('ul', array('class'=>'collapsibleList'));
 		$urlAction = HController::getCurrentUrl();
 		foreach ($childrens as $index => $child) {
 			$html .= CHtml::openTag('li');
