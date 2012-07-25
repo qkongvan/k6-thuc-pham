@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 msie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 msie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 msie" lang="en"> <![endif]-->
@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/form.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/base.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/content.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/collapsibleLists.css">
 	<!--link rel="stylesheet" media="all and (min-width: 1002px) and (max-width: 1247px)" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/978.css"-->
 	<!--link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1001px)" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/748.css"-->
 	<!--link rel="stylesheet" media="all and (min-width: 0px) and (max-width: 767px)" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/300.css"-->
@@ -37,7 +38,10 @@
 		<header id="header" role="banner">
 			<center><div id="banner"></div></center>
 			<!--h1><a href="#"></a><span><?php echo CHtml::encode(Yii::app()->name); ?></span></h1-->
-			
+			<div id="i18n">
+				<a href="#" title="Tiếng Việt"><img src="/images/flag_vn.png" alt="Tiếng Việt"/></a>
+				<a href="#" title="English"><img src="/images/flag_en.png" title="English"/></a>
+			</div>
 			<fieldset id="search">
 				<label for="keyword">Search</label>
 				<input type="text" placeholder="Search..." id="keyword" name="keyword">
@@ -107,6 +111,7 @@ Yii::app()->clientScript->registerCssFile(
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascript/plugins.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascript/script.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascript/swfobject.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/javascript/CollapsibleLists.compressed.js"></script>
 
 <!--[if lte IE 8]>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascript/jquery.media-query.min.js"></script>
@@ -114,6 +119,7 @@ Yii::app()->clientScript->registerCssFile(
 
 <script type="text/javascript">
 	swfobject.embedSWF("/images/banner.swf", "banner", "1218", "240", "9.0.0", "/images/expressInstall.swf", {}, {wmode:'transparent'});
+	CollapsibleLists.apply();
 </script>
 </body>
 </html>

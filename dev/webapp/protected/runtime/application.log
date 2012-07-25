@@ -4726,3 +4726,273 @@ Stack trace:
 #1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
 #2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 15:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 15:56:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:22:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:25:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:25:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:26:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:27:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:30:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:31:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:31:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:31:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:31:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:33:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:44:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:45:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:48:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:50:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "stylesheets/button.png".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('stylesheets/but...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/stylesheets/button.png
+2012/07/25 16:50:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:50:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "stylesheets/button-closed.png".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('stylesheets/but...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/stylesheets/button-closed.png
+2012/07/25 16:50:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "stylesheets/button-open.png".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('stylesheets/but...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/stylesheets/button-open.png
+2012/07/25 16:51:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:52:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:52:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:52:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
+2012/07/25 16:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/products/thumb_13204609621510.jpg".' in D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php:281
+Stack trace:
+#0 D:\Projects\K6\dev\frameworks\yii\web\CWebApplication.php(136): CWebApplication->runController('files/products/...')
+#1 D:\Projects\K6\dev\frameworks\yii\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\Projects\K6\dev\webapp\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/files/products/thumb_13204609621510.jpg
