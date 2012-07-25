@@ -1,0 +1,180 @@
+.jstree ul, .jstree li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.jstree li {
+    display: block;
+    line-height: 18px;
+    margin-left: 18px;
+    min-height: 18px;
+    min-width: 18px;
+    white-space: nowrap;
+}
+.jstree-rtl li {
+    margin-left: 0;
+    margin-right: 18px;
+}
+.jstree > ul > li {
+    margin-left: 0;
+}
+.jstree-rtl > ul > li {
+    margin-right: 0;
+}
+.jstree ins {
+    display: inline-block;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 18px;
+}
+.jstree a {
+    color: black;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    margin: 0;
+    padding: 1px 2px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.jstree a:focus {
+    outline: medium none;
+}
+.jstree a > ins {
+    height: 16px;
+    width: 16px;
+}
+.jstree a > .jstree-icon {
+    margin-right: 3px;
+}
+.jstree-rtl a > .jstree-icon {
+    margin-left: 3px;
+    margin-right: 0;
+}
+li.jstree-open > ul {
+    display: block;
+}
+li.jstree-closed > ul {
+    display: none;
+}
+#vakata-dragged ins {
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    height: 16px;
+    left: 4px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-decoration: none;
+    top: 4px;
+    width: 16px;
+}
+#vakata-dragged .jstree-ok {
+    background: none repeat scroll 0 0 green;
+}
+#vakata-dragged .jstree-invalid {
+    background: none repeat scroll 0 0 red;
+}
+#jstree-marker {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: black;
+    display: none;
+    font-size: 12px;
+    height: 12px;
+    line-height: 10px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-shadow: 1px 1px 1px white;
+    top: -30px;
+    width: 8px;
+    z-index: 10001;
+}
+#jstree-marker-line {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #456C43;
+    background-repeat: no-repeat;
+    border-color: #EEEEEE #EEEEEE #EEEEEE -moz-use-text-color;
+    border-radius: 1px 1px 1px 1px;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0;
+    box-shadow: 0 0 2px #666666;
+    cursor: pointer;
+    display: none;
+    font-size: 1px;
+    height: 1px;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: -30px;
+    width: 100px;
+    z-index: 10000;
+}
+.jstree .jstree-real-checkbox {
+    display: none;
+}
+.jstree-themeroller .ui-icon {
+    overflow: visible;
+}
+.jstree-themeroller a {
+    padding: 0 2px;
+}
+.jstree-themeroller .jstree-no-icon {
+    display: none;
+}
+.jstree .jstree-wholerow-real {
+    position: relative;
+    z-index: 1;
+}
+.jstree .jstree-wholerow-real li {
+    cursor: pointer;
+}
+.jstree .jstree-wholerow-real a {
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+}
+.jstree .jstree-wholerow {
+    height: 0;
+    position: relative;
+    z-index: 0;
+}
+.jstree .jstree-wholerow ul, .jstree .jstree-wholerow li {
+    width: 100%;
+}
+.jstree .jstree-wholerow, .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li, .jstree .jstree-wholerow a {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.jstree .jstree-wholerow, .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li {
+    background: none repeat scroll 0 0 transparent !important;
+}
+.jstree .jstree-wholerow ins, .jstree .jstree-wholerow span, .jstree .jstree-wholerow input {
+    display: none !important;
+}
+.jstree .jstree-wholerow a, .jstree .jstree-wholerow a:hover {
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+    padding: 0 !important;
+    text-indent: -9999px;
+    width: 100%;
+}
+.jstree .jstree-wholerow-span {
+    border-width: 0;
+    height: 18px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 0;
+}

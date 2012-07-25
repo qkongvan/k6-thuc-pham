@@ -1,0 +1,17 @@
+.h-module-products-entries ul { clear:both;overflow:hidden;padding-left: 0px !important;margin: 0 !important; }
+.h-module-products-entries ul li { float:left;display:-moz-inline-stack;display:inline-block;vertical-align:top;*display:inline; }
+.h-module-products-entries ul li a img { margin-left:5px;border:1px solid #E5E6E5;display:inline;padding:2px;cursor: move; }
+.h-module-products-entries ul li a img:hover, .h-module-products-entries ul li a:hover img { border:1px solid #900; }
+.h-module-products-entries ul li p { font-size:.95em;padding:5px 0;text-align:center }
+.h-module-products-entries ul li h5 {margin:3px 0 0 0;width:140px;text-align:center}
+
+.h-module-products-detail {overflow:hidden;padding:0px 0 20px;}
+.h-module-products-detail h4{margin-bottom:10px;}
+.h-module-products-detail a img{float:left;margin-right:20px;border:1px solid #E5E6E5;display:inline;padding:2px;cursor: move;}
+.h-module-products-detail a img:hover,ul.h-module-products-detail li a:hover img{border:1px solid #900;}
+.h-module-products-detail p{margin-bottom:13px;}
+.h-module-products-detail p span{color:#900;font-weight:bolder;}
+.h-module-products-detail p a{float:left;}
+
+div.h_module_products_category_tree ul { padding-left: 20px; list-style-type: circle; }
+div.h_module_products_category_tree ul ul { padding-left: 20px; list-style-type: disc; }
