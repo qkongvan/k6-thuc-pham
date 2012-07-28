@@ -43,12 +43,13 @@ class Manage_itemsController extends HController
 
 				// thumbnails image
 				$thumbsPath = $uploadPath;
-				Yii::import('ext.phpthumb.EasyPhpThumb');
-				$thumbs = new EasyPhpThumb();
-				$thumbs->init();
-				$thumbs->setThumbsDirectory($thumbsPath);
-				$thumbs->load($uploadPath . '/' . $filename)->resize(120, 90)->save('thumb_' . $filename);
-
+				Yii::import("ext.EPhpThumb.EPhpThumb");
+				$thumb = new EPhpThumb();
+				$thumb->init(); //this is needed
+				$thumb->create($uploadPath . '/' . $filename)
+					  ->adaptiveResize(Yii::app()->getModule('products')->widthThumb, Yii::app()->getModule('products')->heightThumb)
+					  ->save($thumbsPath . '/thumb_' . $filename);
+				
 				$model->image = $filename;
 			}
 
@@ -111,11 +112,12 @@ class Manage_itemsController extends HController
 
 				// thumbnails image
 				$thumbsPath = $uploadPath;
-				Yii::import('ext.phpthumb.EasyPhpThumb');
-				$thumbs = new EasyPhpThumb();
-				$thumbs->init();
-				$thumbs->setThumbsDirectory($thumbsPath);
-				$thumbs->load($uploadPath . '/' . $filename)->resize(120, 90)->save('thumb_' . $filename);
+				Yii::import("ext.EPhpThumb.EPhpThumb");
+				$thumb = new EPhpThumb();
+				$thumb->init(); //this is needed
+				$thumb->create($uploadPath . '/' . $filename)
+					  ->adaptiveResize(Yii::app()->getModule('products')->widthThumb, Yii::app()->getModule('products')->heightThumb)
+					  ->save($thumbsPath . '/thumb_' . $filename);
 
 				$model->image = $filename;
 			}
