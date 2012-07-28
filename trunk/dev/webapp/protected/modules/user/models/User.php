@@ -26,6 +26,8 @@ class User extends HActiveRecord
 	const SUPERUSER = 1;
 	const NONSUPERUSER = 0;
 	
+	public $rePassword;
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return User the static model class
@@ -57,6 +59,9 @@ class User extends HActiveRecord
 			array('username', 'length', 'max'=>20),
 			array('password, email, activkey', 'length', 'max'=>128),
 			array('saltkey', 'length', 'max'=>16),
+			array('email', 'email'),
+			array('rePassword', 'required', 'on'=>'admin'),
+			array('rePassword', 'checkRePassword', 'on'=>'admin'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, username, password, email, createtime, lastvisit, superuser, status, saltkey, activkey', 'safe', 'on'=>'search'),
@@ -84,6 +89,7 @@ class User extends HActiveRecord
 			'id' => UserModule::t('ID'),
 			'username' => UserModule::t('Username'),
 			'password' => UserModule::t('Password'),
+			'rePassword' => UserModule::t('Retype Password'),
 			'email' => UserModule::t('Email'),
 			'createtime' => UserModule::t('Createtime'),
 			'lastvisit' => UserModule::t('Lastvisit'),
@@ -92,6 +98,13 @@ class User extends HActiveRecord
 			'saltkey' => UserModule::t('Saltkey'),
 			'activkey' => UserModule::t('Activkey'),
 		);
+	}
+	
+	public function checkRePassword($attribute,$params)
+	{
+		Yii::import('application.modules.user.components.HUserIdentity');
+		if($this->password != $this->rePassword)
+			$this->addError('rePassword', UserModule::t('Incorrect retype password.'));
 	}
 
 	/**
@@ -186,7 +199,8 @@ class User extends HActiveRecord
 		{
 			$this->createtime = time();
 			$this->superuser = User::NONSUPERUSER;
-			$this->status = User::STATUS_NOACTIVE;
+			if ($this->scenario != 'admin') $this->status = User::STATUS_NOACTIVE;
+			else $this->status = User::STATUS_ACTIVE;
 		}
 		return true;
 	}

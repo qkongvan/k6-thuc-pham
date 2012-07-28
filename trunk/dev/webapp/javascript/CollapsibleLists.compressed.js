@@ -78,6 +78,16 @@ _e.className=_e.className.replace(/(^| )collapsibleList(Open|Closed)( |$)/,"");
 if(uls.length>0){
 _e.className+=" collapsibleList"+(_f?"Open":"Closed");
 }
+if(_e.className.indexOf('active')!=-1) {
+	var i=_e.parentNode.className.trim().split(' ').length;
+	var obj = _e.parentNode;
+	while(i>=0){
+		if (obj.style.display=='none') obj.style.display='block';
+		if (obj.className.indexOf('collapsibleListClosed')!=-1) obj.className = obj.className.replace('collapsibleListClosed','collapsibleListOpen');
+		obj = obj.parentNode;
+		i--;
+	}
+}
 };
 }();
 
