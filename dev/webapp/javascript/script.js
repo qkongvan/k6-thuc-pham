@@ -5,7 +5,9 @@ $(function(){
     var currentTheme = myBody.attr('data-theme');
     if (currentTheme != 'none'){
         myBody.addClass(currentTheme);
-    }
+    } else {
+		myBody.addClass('green');
+	}
     /*$('#nav').find('a').each(function(){
         var newTheme = $(this).attr('data-theme');
         $(this).hover(

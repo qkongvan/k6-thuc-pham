@@ -53,9 +53,10 @@ class ProductCategoriesWidget extends HWidget
 		if (!count($childrens)) return '';
 		$html = CHtml::openTag('ul', array('class'=>'collapsibleList'));
 		$urlAction = HController::getCurrentUrl();
+		
 		foreach ($childrens as $index => $child) {
-			$html .= CHtml::openTag('li');
-			$url = Yii::app()->createAbsoluteUrl($urlAction, array('action'=>'list', 'category'=>$child['item']->id));
+			$url = Yii::app()->createUrl($urlAction, array('action'=>'list', 'category'=>$child['item']->id));
+			$html .= CHtml::openTag('li', $url==Yii::app()->request->requestUri?array('class'=>'active'):array());
 			$html .= CHtml::link($child['item']->name, $url);
 			$childItems = $this->__getListChilds($child['children']);
 			if (count($childItems)) $html .= $childItems;

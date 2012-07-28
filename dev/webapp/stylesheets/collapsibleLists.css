@@ -12,3 +12,7 @@ li.collapsibleListClosed{
   list-style-image:url('../images/button-closed.png');
   cursor:pointer;
 }
+
+.collapsibleList .active a{
+	color: #24B37F;
+}

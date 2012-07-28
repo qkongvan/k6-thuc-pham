@@ -24,6 +24,8 @@
 	<!--link rel="stylesheet" media="all and (min-width: 1002px) and (max-width: 1247px)" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/978.css"-->
 	<!--link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1001px)" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/748.css"-->
 	<!--link rel="stylesheet" media="all and (min-width: 0px) and (max-width: 767px)" href="<?php echo Yii::app()->request->baseUrl; ?>/stylesheets/300.css"-->
+	
+	<?php Yii::app()->getClientScript()->registerCssFile('/stylesheets/grid960.css'); ?>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -53,6 +55,8 @@
 					'activeCssClass'=>'current',
 					'items'=>array(
 						array('label'=>'Home', 'url'=>array('/site/index'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Đối Tác', 'url'=>array('/doitac/index'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Tin Tức', 'url'=>array('/new/index'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'Contact', 'url'=>array('/site/contact'), 'linkOptions'=>array('data-theme'=>'green')),
 		                // Module Products

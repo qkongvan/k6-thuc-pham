@@ -3,8 +3,6 @@ $this->breadcrumbs=array(
 	'Shop',
 );?>
 
-<?php Yii::app()->getClientScript()->registerCssFile('/stylesheets/grid960.css'); ?>
-
 <div class="body_960">
 <div class="container_16 h_module_products_shop">
 
