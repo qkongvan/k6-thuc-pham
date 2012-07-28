@@ -7,6 +7,8 @@ class ProductsModule extends HWebModule
 	 */
 	public $entriesShow = 20;
 	public $entriesManageShow = 5;
+	public $widthThumb = 198;
+	public $heightThumb = 132;
 
 	public function init()
 	{
