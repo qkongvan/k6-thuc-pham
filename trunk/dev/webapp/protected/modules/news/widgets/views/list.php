@@ -7,7 +7,7 @@
 		<li>
 			<?php $url = Yii::app()->createAbsoluteUrl(HController::getCurrentUrl(), array('action'=>'detail', 'news'=>$item->id)); ?>
 			<div class="h-module-news-left-content">
-				<a href="<?php echo $url; ?>"><img title="<?php echo CHtml::encode($item->title); ?>" alt="" src="<?php if ($item->image) { echo Yii::app()->createAbsoluteUrl('/') . '/assets/news/thumb_' . $item->image; } else { echo $baseScriptUrl . '/no_image.gif'; } ?>" /></a>
+				<a href="<?php echo $url; ?>"><img title="<?php echo CHtml::encode($item->title); ?>" alt="" src="<?php if ($item->image) { echo Yii::app()->createAbsoluteUrl('/') . '/files/news/thumb_' . $item->image; } else { echo $baseScriptUrl . '/no_image.gif'; } ?>" /></a>
 			</div>
 			<div class="h-module-news-right-content">
 				<h5><?php echo CHtml::link($item->title, $url); ?></h5>
