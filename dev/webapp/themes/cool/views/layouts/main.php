@@ -56,7 +56,7 @@
 					'items'=>array(
 						array('label'=>'Home', 'url'=>array('/site/index'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'Đối Tác', 'url'=>array('/doitac/index'), 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>'Tin Tức', 'url'=>array('/new/index'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Tin Tức', 'url'=>array('/news/index'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'Contact', 'url'=>array('/site/contact'), 'linkOptions'=>array('data-theme'=>'green')),
 		                // Module Products

@@ -8,4 +8,6 @@ return array(
 	'user',
 	// plugin: products
 	'products',
+	// plugin: news
+	'news',
 );
