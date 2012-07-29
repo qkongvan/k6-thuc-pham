@@ -7,7 +7,7 @@
 			<a class="h-dialog-link" href="<?php echo Yii::app()->createAbsoluteUrl('/products/manage_items/update', array('id'=>$data->id,'category'=>'')); ?>"><img src="<?php echo $baseScriptUrl . '/update.png'; ?>"/></a>
 		<?php endif; ?>
 	</h4>
-	<p><?php echo ProductsModule::t('Price'); ?>: <span><?php echo CHtml::encode($data->price); ?></span></p>
+	<p><?php echo ProductsModule::t('Price'); ?>: <span><?php echo CHtml::encode($data->price) . ($data->unit ? ('/' . CHtml::encode($data->unit)) : ''); ?></span></p>
 	<p><?php echo ProductsModule::t('Number'); ?>: <input type="text" size="15" value="1" /><input class="h-button-add_tab-cart" type="button" value="<?php echo ProductsModule::t('Add to Cart'); ?>" /></p>
 	<p><?php echo CHtml::encode($data->short_description); ?></p>
 </div>
