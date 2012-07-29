@@ -14,19 +14,19 @@ class Manage_itemsController extends HController
 		$baseScriptUrl = Yii::app()->assetManager->publish(dirname(__file__) . '/../assets');
 		Yii::app()->getClientScript()->registerCssFile($baseScriptUrl . '/products.css');
 
-		$model = new ProductItem;
+		$model = new NewsItem;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['ProductItem'])) {
-			$model->attributes = $_POST['ProductItem'];
-			if (isset($_POST['ProductItem']['categories']))
-				$model->categories = implode(',', $_POST['ProductItem']['categories']);
+		if (isset($_POST['NewsItem'])) {
+			$model->attributes = $_POST['NewsItem'];
+			if (isset($_POST['NewsItem']['categories']))
+				$model->categories = implode(',', $_POST['NewsItem']['categories']);
 
 			$fileUpload = CUploadedFile::getInstance($model, 'image');
 			if (isset($fileUpload) && $model->validate()) {
-				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/assets/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
+				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/files/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
 
 				if (!is_dir($uploadPath)) {
 					@mkdir($uploadPath);
@@ -63,7 +63,7 @@ class Manage_itemsController extends HController
 				$model->categories = $_GET['category'];
 		}
 
-		$categories = ProductCategory::model()->roots()->findAll();
+		$categories = NewsCategory::model()->roots()->findAll();
 
 		$this->render('form', array('model' => $model, 'categories' => $categories));
 	}
@@ -83,14 +83,14 @@ class Manage_itemsController extends HController
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['ProductItem'])) {
-			$model->attributes = $_POST['ProductItem'];
-			if (isset($_POST['ProductItem']['categories']))
-				$model->categories = implode(',', $_POST['ProductItem']['categories']);
+		if (isset($_POST['NewsItem'])) {
+			$model->attributes = $_POST['NewsItem'];
+			if (isset($_POST['NewsItem']['categories']))
+				$model->categories = implode(',', $_POST['NewsItem']['categories']);
 
 			$fileUpload = CUploadedFile::getInstance($model, 'image');
 			if (isset($fileUpload) && $model->validate()) {
-				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/assets/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
+				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/files/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
 
 				if (!is_dir($uploadPath)) {
 					@mkdir($uploadPath);
@@ -137,7 +137,7 @@ class Manage_itemsController extends HController
 				$this->redirect(array('admin'));
 		}
 
-		$categories = ProductCategory::model()->roots()->findAll();
+		$categories = NewsCategory::model()->roots()->findAll();
 
 		$this->render('form', array('model' => $model, 'categories' => $categories));
 	}
@@ -153,7 +153,7 @@ class Manage_itemsController extends HController
 			// we only allow deletion via POST request
 			$model = $this->loadModel($id);
 			if ($model->image) {
-				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/assets/products';
+				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/files/products';
 				@unlink($uploadPath . '/' . $model->image);
 				@unlink($uploadPath . '/thumb_' . $model->image);
 			}
@@ -181,14 +181,14 @@ class Manage_itemsController extends HController
 			}
 		}
 
-		$model = new ProductItem('search');
+		$model = new NewsItem('search');
 		$model->unsetAttributes(); // clear any default values
-		if (isset($_GET['ProductItem']))
-			$model->attributes = $_GET['ProductItem'];
+		if (isset($_GET['NewsItem']))
+			$model->attributes = $_GET['NewsItem'];
 
 		if ($category) {
 			$arrCat = array($category);
-			$categories = ProductCategory::model()->findByPk($category);
+			$categories = NewsCategory::model()->findByPk($category);
 			if ($categories) {
 				$descendants = $categories->descendants()->findAll('is_active = 1');
 				foreach ($descendants as $cat)
@@ -207,7 +207,7 @@ class Manage_itemsController extends HController
 	 */
 	public function loadModel($id)
 	{
-		$model = ProductItem::model()->findByPk($id);
+		$model = NewsItem::model()->findByPk($id);
 		if ($model === null)
 			throw new CHttpException(404, 'The requested page does not exist.');
 		return $model;
