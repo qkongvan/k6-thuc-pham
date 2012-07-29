@@ -8,7 +8,7 @@
 			<?php $url = Yii::app()->createAbsoluteUrl(HController::getCurrentUrl(), array('action'=>'detail', 'product'=>$item->id)); ?>
 			<a href="<?php echo $url; ?>"><img title="<?php echo CHtml::encode($item->name); ?>" rel="<?php echo $item->id.'|||'.$item->price; ?>" alt="" src="<?php if ($item->image) { echo Yii::app()->createAbsoluteUrl('/') . '/files/products/thumb_' . $item->image; } else { echo $baseScriptUrl . '/no_image.gif'; } ?>" /></a>
 			<h5><?php echo CHtml::link($item->name, $url); ?></h5>
-			<p><?php echo ProductsModule::t('Price'); ?>: <span><?php echo CHtml::encode($item->price); ?></span></p>
+			<p><?php echo ProductsModule::t('Price'); ?>: <span><?php echo CHtml::encode($item->price) . ' ' . CHtml::encode($item->unit); ?></span></p>
 		</li>
 	<?php endforeach; ?>
 	</ul>
