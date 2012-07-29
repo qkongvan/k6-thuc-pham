@@ -46,10 +46,17 @@ class ProductItem extends HActiveRecord
 	{
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
-		return array(array('name, price, short_description, description', 'required'), array('price, status, removeImage', 'numerical', 'integerOnly' => true), array('id', 'length', 'max' => 16), array('name', 'length', 'max' => 255), array('short_description, description',
-			'safe'), array('image', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true), array('image', 'unsafe'), // The following rule is used by search().
+		return array(
+			array('name, price, short_description, description', 'required'),
+			array('price, status, removeImage', 'numerical', 'integerOnly' => true), 
+			array('id', 'length', 'max' => 16), 
+			array('name', 'length', 'max' => 255), 
+			array('short_description, description, unit', 'safe'), 
+			array('image', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true), 
+			array('image', 'unsafe'), // The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-		array('id, name, price, short_description, description, status', 'safe', 'on' => 'search'), );
+			array('id, name, price, short_description, unit, description, status', 'safe', 'on' => 'search'),
+		);
 	}
 
 	/**
@@ -67,8 +74,19 @@ class ProductItem extends HActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array('id' => 'ID', 'name' => 'Name', 'image' => 'Image', 'price' => 'Price', 'short_description' => 'Short Description', 'description' => 'Description', 'status' => 'Status', 'created' => 'Created', 'modified' => 'Modified', 'removeImage' =>
-			'Remove Image', );
+		return array(
+			'id' => 'ID', 
+			'name' => 'Name', 
+			'image' => 'Image', 
+			'price' => 'Price', 
+			'unit' => 'Unit', 
+			'short_description' => 'Short Description', 
+			'description' => 'Description', 
+			'status' => 'Status', 
+			'created' => 'Created', 
+			'modified' => 'Modified', 
+			'removeImage' => 'Remove Image', 
+		);
 	}
 
 	/**
@@ -86,6 +104,7 @@ class ProductItem extends HActiveRecord
 		$criteria->compare('name', $this->name, true);
 		$criteria->compare('image', $this->image);
 		$criteria->compare('price', $this->price);
+		$criteria->compare('unit', $this->unit);
 		$criteria->compare('short_description', $this->short_description, true);
 		$criteria->compare('description', $this->description, true);
 		$criteria->compare('status', $this->status);

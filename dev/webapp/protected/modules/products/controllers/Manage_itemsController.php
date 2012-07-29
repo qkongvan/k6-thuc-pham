@@ -14,15 +14,15 @@ class Manage_itemsController extends HController
 		$baseScriptUrl = Yii::app()->assetManager->publish(dirname(__file__) . '/../assets');
 		Yii::app()->getClientScript()->registerCssFile($baseScriptUrl . '/products.css');
 
-		$model = new NewsItem;
+		$model = new ProductItem;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['NewsItem'])) {
-			$model->attributes = $_POST['NewsItem'];
-			if (isset($_POST['NewsItem']['categories']))
-				$model->categories = implode(',', $_POST['NewsItem']['categories']);
+		if (isset($_POST['ProductItem'])) {
+			$model->attributes = $_POST['ProductItem'];
+			if (isset($_POST['ProductItem']['categories']))
+				$model->categories = implode(',', $_POST['ProductItem']['categories']);
 
 			$fileUpload = CUploadedFile::getInstance($model, 'image');
 			if (isset($fileUpload) && $model->validate()) {
@@ -63,7 +63,7 @@ class Manage_itemsController extends HController
 				$model->categories = $_GET['category'];
 		}
 
-		$categories = NewsCategory::model()->roots()->findAll();
+		$categories = ProductCategory::model()->roots()->findAll();
 
 		$this->render('form', array('model' => $model, 'categories' => $categories));
 	}
@@ -83,10 +83,10 @@ class Manage_itemsController extends HController
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['NewsItem'])) {
-			$model->attributes = $_POST['NewsItem'];
-			if (isset($_POST['NewsItem']['categories']))
-				$model->categories = implode(',', $_POST['NewsItem']['categories']);
+		if (isset($_POST['ProductItem'])) {
+			$model->attributes = $_POST['ProductItem'];
+			if (isset($_POST['ProductItem']['categories']))
+				$model->categories = implode(',', $_POST['ProductItem']['categories']);
 
 			$fileUpload = CUploadedFile::getInstance($model, 'image');
 			if (isset($fileUpload) && $model->validate()) {
@@ -137,7 +137,7 @@ class Manage_itemsController extends HController
 				$this->redirect(array('admin'));
 		}
 
-		$categories = NewsCategory::model()->roots()->findAll();
+		$categories = ProductCategory::model()->roots()->findAll();
 
 		$this->render('form', array('model' => $model, 'categories' => $categories));
 	}
@@ -181,14 +181,14 @@ class Manage_itemsController extends HController
 			}
 		}
 
-		$model = new NewsItem('search');
+		$model = new ProductItem('search');
 		$model->unsetAttributes(); // clear any default values
-		if (isset($_GET['NewsItem']))
-			$model->attributes = $_GET['NewsItem'];
+		if (isset($_GET['ProductItem']))
+			$model->attributes = $_GET['ProductItem'];
 
 		if ($category) {
 			$arrCat = array($category);
-			$categories = NewsCategory::model()->findByPk($category);
+			$categories = ProductCategory::model()->findByPk($category);
 			if ($categories) {
 				$descendants = $categories->descendants()->findAll('is_active = 1');
 				foreach ($descendants as $cat)
@@ -207,7 +207,7 @@ class Manage_itemsController extends HController
 	 */
 	public function loadModel($id)
 	{
-		$model = NewsItem::model()->findByPk($id);
+		$model = ProductItem::model()->findByPk($id);
 		if ($model === null)
 			throw new CHttpException(404, 'The requested page does not exist.');
 		return $model;

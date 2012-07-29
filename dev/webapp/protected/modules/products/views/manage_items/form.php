@@ -40,6 +40,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'unit'); ?>
+		<?php echo $form->textField($model,'unit',array('size'=>30)); ?>
+		<?php echo $form->error($model,'unit'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'short_description'); ?>
 		<?php echo $form->textArea($model,'short_description',array('rows'=>3, 'cols'=>40)); ?>
 		<?php echo $form->error($model,'short_description'); ?>
