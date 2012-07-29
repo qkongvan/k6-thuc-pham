@@ -26,7 +26,7 @@ class Manage_itemsController extends HController
 
 			$fileUpload = CUploadedFile::getInstance($model, 'image');
 			if (isset($fileUpload) && $model->validate()) {
-				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/files/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
+				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/assets/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
 
 				if (!is_dir($uploadPath)) {
 					@mkdir($uploadPath);
@@ -90,7 +90,7 @@ class Manage_itemsController extends HController
 
 			$fileUpload = CUploadedFile::getInstance($model, 'image');
 			if (isset($fileUpload) && $model->validate()) {
-				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/files/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
+				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/assets/products'; //Yii::app()->basePath . '/../jlwebroot/upload';
 
 				if (!is_dir($uploadPath)) {
 					@mkdir($uploadPath);
@@ -153,7 +153,7 @@ class Manage_itemsController extends HController
 			// we only allow deletion via POST request
 			$model = $this->loadModel($id);
 			if ($model->image) {
-				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/files/products';
+				$uploadPath = YiiBase::getPathOfAlias('webroot') . '/assets/products';
 				@unlink($uploadPath . '/' . $model->image);
 				@unlink($uploadPath . '/thumb_' . $model->image);
 			}
