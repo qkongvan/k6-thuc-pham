@@ -93,13 +93,13 @@ input[type="button"]:active, input[type="submit"]:active {
 #footer a:hover { color: #fff; }
 #footer h2, #footer h3 { font-weight: normal; margin: 0; }
 #footer h2 {
-	border-bottom: #222 solid 1px; font-family: 'LubalinGraphXtralight', Georgia, Arial, Helvetica, sans-serif; font-size: 35px; height: 52px; padding: 32px 0 18px;
+	border-bottom: #222 solid 1px; font-family: Georgia, Arial, Helvetica, sans-serif; font-size: 35px; height: 52px; padding: 32px 0 18px;
 	-moz-box-shadow: 0 1px 0 #333; -webkit-box-shadow: 0 1px 0 #333; box-shadow: 0 1px 0 #333;
 }
 #footer h2 span { background: url(../images/logo.png) no-repeat -169px -162px; float: left; height: 52px; margin-right: 12px; overflow: hidden; position: relative; text-indent: -9999px; top: -12px; width: 169px; }
 #footer h3 { font-family: 'LubalinGraphMedium', Georgia, Arial, Helvetica, sans-serif; font-size: 18px; padding: 32px 0 5px; }
 #footer li { padding: 2px 0; }
-#footer .group { overflow: hidden; padding-bottom: 30px; }
+#footer .group { overflow: hidden; padding-bottom: 30px; padding-left: 20px; }
 #footer section { float: left; margin-left: 30px; /*width: 178px;*/ }
 #footer section:first-child { margin-left: 0; }
 
@@ -635,7 +635,7 @@ input[type="button"]:active, input[type="submit"]:active {
 /* module products */
 .h_module_products_shop input[type="text"] { background-color: transparent; border: 0; border-bottom: #ddd solid 1px; color: #333; margin: 0px 5px; -webkit-appearance: none; }
 
-.h_module_products_shop h2 { border-bottom: #ddd solid 1px; color: #333; font-family: 'LubalinGraphXtralight', Georgia, Arial, Helvetica, sans-serif; font-size: 25px; height: 32px; padding: 0px 0 18px; margin:0px;
+.h_module_products_shop h2 { border-bottom: #ddd solid 1px; color: #333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; height: 32px; padding: 0px 0 6px; margin:0px;
 	-moz-box-shadow: 0 1px 0 #fff; -webkit-box-shadow: 0 1px 0 #fff; box-shadow: 0 1px 0 #fff; 
 }
 
@@ -677,4 +677,15 @@ input[type="button"]:active, input[type="submit"]:active {
 div.form input[type="text"], div.form input[type="password"], div.form textarea, table input[type="text"] {
 	background-color: #faffbd; border: #ccc solid 1px; color: #666; font-family: 'LubalinGraphMedium', Georgia, Arial, Helvetica, sans-serif; font-size: 12px; margin: 0; padding: 5px 5px;
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+
+.h_sidebar_block {
+	margin-bottom: 60px;
+}
+.h_sidebar_block div{
+	margin: 20px 0;
+}
+
+.h-module-news-lastest-entries ul {
+	padding-left: 20px;
 }

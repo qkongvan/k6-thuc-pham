@@ -14,7 +14,7 @@ class ProductItemsWidget extends HWidget
 	/**
 	 * getListItems - Phương thức dùng để lấy dữ liệu
 	 */
-	public function getListItems($category_id = null)
+	public function getListItems($category_id = null, $not_id = null, $pagesize = null)
 	{
 		Yii::import('application.modules.products.models.ProductItem');
 
@@ -44,8 +44,9 @@ class ProductItemsWidget extends HWidget
 		}
 
 		$criteria->compare('status', 1);
+		if ($not_id) $criteria->compare('`t`.id', '<>'.$not_id);
 
-		$search = new CActiveDataProvider($model, array('criteria' => $criteria, 'pagination' => array('pageSize' => Yii::app()->getModule('products')->entriesShow, ), ));
+		$search = new CActiveDataProvider($model, array('criteria' => $criteria, 'pagination' => array('pageSize' => $pagesize!=null ? $pagesize : Yii::app()->getModule('products')->entriesShow, ), ));
 
 		$data = $search->getData();
 		$this->__pagination = $search->pagination;
@@ -96,7 +97,13 @@ class ProductItemsWidget extends HWidget
 				if (empty($data)) {
 					$this->render('no-result');
 				} else {
-					$this->render('detail', array('data' => $data, 'baseScriptUrl' => $baseScriptUrl));
+					$relationItems = array();
+					$categories = $data->categoryitem;
+					if (count($categories))
+						$relationItems = $this->getListItems($categories[0]->category_id, $product, 3);
+					else
+						$relationItems = $this->getListItems(null, $product, 3);
+					$this->render('detail', array('data' => $data, 'relationItems'=>$relationItems, 'baseScriptUrl' => $baseScriptUrl));
 				}
 			} else
 				$this->render('no-result');

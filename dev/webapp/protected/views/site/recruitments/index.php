@@ -1,10 +1,10 @@
 <div class="body_960">
 <div class="container_16 h_module_products_shop">
-	<?php $this->renderPartial('pages/_menu'); ?>
+	<?php $this->renderPartial('recruitments/_menu'); ?>
 
 	<div class="grid_13">
 
-		<h2>Thư Ngỏ</h2>
+		<h2>Tin tuyển dụng</h2>
 
 		<div style="margin:0 20px">
 			<p>Kính thưa, quý khách hàng!</p>

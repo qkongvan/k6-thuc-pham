@@ -1,20 +1,18 @@
 <?php
 
 /**
- * NewsItemsWidget - Widget dùng để render Items Newss
+ * NewsItemsWidget - Widget dùng để render Lastest Items News in Sidebar
  * 
  * @author huytbt
- * @date 2011-08-30
+ * @date 2011-10-28
  * @version 1.0
  */
-class NewsItemsWidget extends HWidget
+class NewsLastestItemsWidget extends HWidget
 {
-	private $__pagination;
-	private $__category;
 	/**
 	 * getListItems - Phương thức dùng để lấy dữ liệu
 	 */
-	public function getListItems($category_id = null, $not_id = null, $pagesize = null)
+	public function getListItems($category_id = null)
 	{
 		Yii::import('application.modules.news.models.NewsItem');
 
@@ -44,12 +42,10 @@ class NewsItemsWidget extends HWidget
 		}
 
 		$criteria->compare('status', 1);
-		if ($not_id) $criteria->compare('`t`.id', '<>'.$not_id);
 
-		$search = new CActiveDataProvider($model, array('criteria' => $criteria, 'pagination' => array('pageSize' => $pagesize!=null ? $pagesize : Yii::app()->getModule('news')->entriesShow, ), ));
+		$search = new CActiveDataProvider($model, array('criteria' => $criteria, 'pagination' => array('pageSize' => Yii::app()->getModule('news')->entriesLastestShow, ), ));
 
 		$data = $search->getData();
-		$this->__pagination = $search->pagination;
 
 		return $data;
 	}
@@ -76,37 +72,14 @@ class NewsItemsWidget extends HWidget
 		// Đăng ký assets
 		$baseScriptUrl = Yii::app()->assetManager->publish(dirname(__file__) . '/../assets');
 		Yii::app()->getClientScript()->registerCssFile($baseScriptUrl . '/news.css');
+		
+		$data = $this->getListItems();
 
-		$action = isset($_GET['action']) ? $_GET['action'] : 'list';
-
-		if ($action == 'list') {
-			$category = isset($_GET['category']) ? $_GET['category'] : '';
-
-			$data = $this->getListItems($category);
-
-			if (empty($data)) {
-				$this->render('no-result');
-			} else {
-				$this->render('list', array('data' => $data, 'pages' => $this->__pagination, 'category' => $this->__category, 'baseScriptUrl' => $baseScriptUrl));
-			}
-		} else
-			if ($action == 'detail') {
-				$news = isset($_GET['news']) ? $_GET['news'] : '';
-				$data = $this->getDetail($news);
-
-				if (empty($data)) {
-					$this->render('no-result');
-				} else {
-					$relationItems = array();
-					$categories = $data->categoryitem;
-					if (count($categories))
-						$relationItems = $this->getListItems($categories[0]->category_id, $news, 5);
-					else
-						$relationItems = $this->getListItems(null, $news, 5);
-					$this->render('detail', array('data' => $data, 'relationItems' => $relationItems, 'baseScriptUrl' => $baseScriptUrl));
-				}
-			} else
-				$this->render('no-result');
+		if (empty($data)) {
+			$this->render('no-result');
+		} else {
+			$this->render('lastest', array('data' => $data, 'baseScriptUrl' => $baseScriptUrl));
+		}
 	}
 
 }

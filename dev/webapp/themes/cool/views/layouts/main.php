@@ -54,18 +54,18 @@
 				<?php $this->widget('widgets.HMenu',array(
 					'activeCssClass'=>'current',
 					'items'=>array(
-						array('label'=>'Home', 'url'=>array('/site/index'), 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>'Đối Tác', 'url'=>array('/doitac/index'), 'linkOptions'=>array('data-theme'=>'green')),
+						//array('label'=>'Trang Chủ', 'url'=>array('/site/index'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Trang Chủ', 'url'=>array('/products/shop'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Giới Thiệu', 'url'=>array('/site/page', 'view'=>'about'), 'linkOptions'=>array('data-theme'=>'green')),
+		                // array('label'=>'Đối Tác', 'url'=>array('/doitac/index'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'Tin Tức', 'url'=>array('/news/index'), 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'), 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>'Contact', 'url'=>array('/site/contact'), 'linkOptions'=>array('data-theme'=>'green')),
-		                // Module Products
-		                array('label'=>'Shop', 'url'=>array('/products/shop'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Liên Hệ', 'url'=>array('/site/contact'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Tuyển Dụng', 'url'=>array('/site/recruitment'), 'linkOptions'=>array('data-theme'=>'green')),
 		                // Module User
-						array('label'=>Yii::app()->getModule('user')->t("Login"), 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>Yii::app()->getModule('user')->t("Register"), 'url'=>array('/user/register'), 'visible'=>Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>Yii::app()->getModule('user')->t("Profile"), 'url'=>array('/user/profile'), 'visible'=>!Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'url'=>array('/user/logout'), 'visible'=>!Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
+						// array('label'=>Yii::app()->getModule('user')->t("Login"), 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
+						// array('label'=>Yii::app()->getModule('user')->t("Register"), 'url'=>array('/user/register'), 'visible'=>Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
+						// array('label'=>Yii::app()->getModule('user')->t("Profile"), 'url'=>array('/user/profile'), 'visible'=>!Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
+						// array('label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'url'=>array('/user/logout'), 'visible'=>!Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),
 					),
 				)); ?>
 			</nav>
@@ -83,15 +83,18 @@
 	<!-- footer -->
 	<div id="footer-wrapper">
 		<footer id="footer" role="contentinfo">
-			<h2><span>Grazia</span> quick access</h2>
+			<h2 style="position:relative;text-indent: 3.5em;padding:55px 0 0px">
+				<img src="/images/logo2.png" width="120" style="position:absolute;top:-6px;left:0px"/>DNTN Phú Tứ
+			</h2>
 			<div class="group">
 				<section>
-					<h3>Page Informations</h3>
+					<h3>Rau sạch Thành Vinh - Rau sạch Nghệ An</h3>
 					<nav>
 						<ul>
-							<li><?php echo Yii::app()->params['copyrightInfo']; ?></li>
-							<li>All Rights Reserved.</li>
-							<li><?php echo Yii::powered(); ?></li>
+							<li>Số 05 - Nguyễn Bỉnh Khiêm - TP. Vinh - Nghệ An</li>
+							<li>Email: rausachthanhphovinh@gmail.com</li>
+							<li>Sykpe: rausachthanhphovinh</li>
+							<li>Yahoo: rausachthanhphovinh</li>
 						</ul>
 					</nav>
 				</section>

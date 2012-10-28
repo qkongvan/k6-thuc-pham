@@ -8,6 +8,20 @@
 	</h4>
 </div>
 
-<div id="news-description">
+<div id="news-description" style="margin-bottom:30px">
 	<?php echo $data->content; ?>
 </div>
+
+<?php if (count($relationItems)) : ?>
+<h2>Tin Tức Liên Quan</h2>
+<div class="h-module-products-entries">
+	<ul>
+	<?php foreach($relationItems as $item) : ?>
+		<li>
+			<?php $url = Yii::app()->createAbsoluteUrl(HController::getCurrentUrl(), array('action'=>'detail', 'news'=>$item->id)); ?>
+			<?php echo CHtml::link($item->title, $url); ?>
+		</li>
+	<?php endforeach; ?>
+	</ul>
+</div>
+<?php endif; ?>
