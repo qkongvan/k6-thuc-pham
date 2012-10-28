@@ -18,6 +18,12 @@ class SiteController extends HController
 			'page'=>array(
 				'class'=>'CViewAction',
 			),
+			// page action renders "static" pages stored under 'protected/views/site/pages'
+			// They can be accessed via: index.php?r=site/recruitment&view=FileName
+			'recruitment'=>array(
+				'class'=>'CViewAction',
+				'basePath'=>'application.views.site.recruitments',
+			),
 		);
 	}
 

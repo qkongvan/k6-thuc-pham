@@ -7,7 +7,9 @@ return array(
 	// plugin: user
 	'user',
 	// plugin: products
-	'products',
+	'products' => array(
+		'entriesShow' => 9,
+	),
 	// plugin: news
 	'news',
 );

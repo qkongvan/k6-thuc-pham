@@ -1,6 +1,6 @@
 <div class="body_960">
 <div class="container_16 h_module_products_shop">
-	<?php $this->renderPartial('pages/_menu'); ?>
+	<?php $this->renderPartial('recruitments/_menu'); ?>
 
 	<div class="grid_13">
 

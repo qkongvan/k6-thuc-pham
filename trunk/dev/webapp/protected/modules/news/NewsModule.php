@@ -7,6 +7,7 @@ class NewsModule extends HWebModule
 	 */
 	public $entriesShow = 20;
 	public $entriesManageShow = 5;
+	public $entriesLastestShow = 5;
 	public $widthThumb = 198;
 	public $heightThumb = 132;
 

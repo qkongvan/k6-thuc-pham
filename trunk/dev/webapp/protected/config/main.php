@@ -20,10 +20,13 @@ return array(
 	'preload'=>array('log'),
 	
 	// Set default language
-	'language'=>'en',
+	'language'=>'vi',
 	
 	// Set default theme
 	'theme'=>'cool',
+	
+	// Set default action
+	'defaultController' => 'products/shop/index',
 
 	// autoloading model and component classes
 	'import'=>array(

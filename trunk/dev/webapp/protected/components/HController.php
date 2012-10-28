@@ -71,7 +71,8 @@ class HController extends CController
 	
 	public static function getCurrentUrl()
 	{
-		$urlAction = '/' . Yii::app()->controller->module->id . '/' . Yii::app()->controller->id . '/' . Yii::app()->controller->action->ID;
+		$module = Yii::app()->controller->module != null ? ('/'.Yii::app()->controller->module->id) : '';
+		$urlAction = $module . '/' . Yii::app()->controller->id . '/' . Yii::app()->controller->action->ID;
 		return $urlAction;
 	}
 	
