@@ -1,0 +1,26 @@
+/* grid */
+#header, #footer, #sections, #main { width: 978px; }
+
+/* footer */
+#footer section { /*width: 138px;*/ }
+
+/* sections */
+#sections section { width: 306px; }
+
+/* extras */
+#extras { width: 306px; }
+
+    /* emailer */
+    .emailer input[type="text"] { width: 175px; }
+
+/* content */
+#content { width: 642px; }
+
+    /* multicolumn */
+    .multicolumn .column { width: 306px; }
+
+    /* latest-articles */
+    .latest-articles .items a { background-position: 272px 20px; }
+    
+/* module products */
+#h-shop-cart {display: none !important;}

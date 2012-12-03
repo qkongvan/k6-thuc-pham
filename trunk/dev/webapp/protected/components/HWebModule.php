@@ -17,6 +17,7 @@ abstract class HWebModule extends CWebModule
 	*/
 	public static function t($message='', $params=array(), $category='default', $source=null, $language=null)
 	{
+		return $message; // HOT FIX
 		return Yii::t(get_called_class().'.'.$category, $message, $params, $source, $language);
 	}
 }

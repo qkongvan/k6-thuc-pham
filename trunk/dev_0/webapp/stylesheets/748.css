@@ -1,0 +1,62 @@
+/* grid */
+#header, #footer, #sections, #main { width: 748px; }
+
+/* header */
+#header { position: relative; }
+
+    /* search */
+    #search { position: absolute; right: 0; top: 70px; }
+
+/* footer */
+#footer .group { padding-bottom: 20px; }
+#footer section { margin-left: 20px; /*width: 108px;*/ }
+
+/* sections */
+#sections li a { background-position: 10px 17px; padding-left: 28px; }
+#sections .group { margin-right: -20px; padding: 20px 0; }
+#sections section { margin-bottom: 20px; margin-right: 20px; width: 236px; }
+#sections figure { left: 10px; top: 10px; }
+#sections .feature { padding: 10px 10px 10px 108px; }
+
+/* main */
+#main { padding: 20px 0; }
+
+/* extras */
+#extras { width: 236px; }
+
+    /* subscriber */
+    .subscriber { min-height: 102px; padding-right: 102px; }
+    .subscriber figure img { height: 90px; width: 70px; }
+
+    /* whats-hot */
+    .whats-hot figure { left: 10px; top: 10px; }
+    .whats-hot li a { padding: 10px 10px 10px 64px; }
+
+    /* newsletter */
+    .newsletter p, .newsletter fieldset { padding: 10px; }
+
+    /* emailer */
+    .emailer input[type="text"] { margin-bottom: 10px; width: 210px; }
+
+/* content */
+#content { width: 492px; }
+
+    /* today's selection */
+    .todays-selection { width: auto; }
+    .todays-selection li { width: 492px; }
+    .todays-selection li.even { margin-right: 0; }
+    .todays-selection img { width: 100%; }
+
+    /* multicolumn */
+    .multicolumn .column { width: 236px; }
+
+    /* latest-articles */
+    .latest-articles article h4 { padding: 10px 10px 6px; }
+    .latest-articles article p { padding: 0 10px 10px; }
+    .latest-articles .items a { background-position: 212px 13px; font-size: 12px; padding: 10px 34px 10px 10px; }
+    .latest-articles .video-items a { min-height: 60px; padding: 10px 10px 10px 115px; }
+    .latest-articles .video-items figure { left: 10px; top: 10px; }
+    .latest-articles .video-items img { height: 60px; width: 95px; }
+    
+/* module products */
+#h-shop-categories, #h-shop-cart {display: none !important;}

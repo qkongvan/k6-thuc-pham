@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 msie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 msie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 msie" lang="en"> <![endif]-->
