@@ -1,0 +1,9 @@
+Installation
+
+Extract the release file under protected
+Insert to config/main.php
+
+	'modules'=>array(
+                'user',
+        ),
+
