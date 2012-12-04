@@ -11,7 +11,7 @@
 	<![endif]-->
 	
 	<!--meta name="viewport" content="width=device-width,initial-scale=1"-->
-	<link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico">
+	<link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/logo21.png">
 	
 	<!--[if lt IE 9]>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/javascript/html5.js"></script>
@@ -39,6 +39,7 @@
 	<div id="header-wrapper">
 		<header id="header" role="banner">
 			<center><div id="banner"></div></center>
+			<div id="headerlogo" style="display:none"><img src="/images/logo21.png" /></div>
 			<!--h1><a href="#"></a><span><?php echo CHtml::encode(Yii::app()->name); ?></span></h1-->
 			<div id="i18n">
 				<a href="#" title="Tiếng Việt"><img src="/images/flag_vn.png" alt="Tiếng Việt"/></a>
@@ -127,6 +128,9 @@ Yii::app()->clientScript->registerCssFile(
 <script type="text/javascript">
 	swfobject.embedSWF("/images/banner.swf", "banner", "1218", "240", "9.0.0", "/images/expressInstall.swf", {}, {wmode:'transparent'});
 	CollapsibleLists.apply();
+	$(document).ready(function() {
+		setTimeout(function() { $('#headerlogo').fadeIn(); }, 1000 );
+	});
 </script>
 </body>
 </html>

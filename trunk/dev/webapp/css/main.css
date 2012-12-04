@@ -24,7 +24,7 @@ body
 
 #content
 {
-    padding: 20px;
+	padding: 20px;
 }
 
 #sidebar
@@ -230,15 +230,15 @@ div.search-form
 
 #h-shop-categories
 {
-    padding: 20px 0px 20px 20px;
+	padding: 20px 0px 20px 20px;
 }
 
 #h-shop-items
 {
-    padding: 20px 0px;
+	padding: 20px 0px;
 }
 
 #h-shop-cart
 {
-    padding: 20px 20px 20px 0px;
+	padding: 20px 20px 20px 0px;
 }
