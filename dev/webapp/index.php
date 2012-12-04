@@ -1,5 +1,5 @@
 <?php
-$login = 'rauvinh';
+/*$login = 'rauvinh';
 $pass = 'cowfcasnguwaj2610';
 
 if((!isset($_SERVER['PHP_AUTH_PW']) || $_SERVER['PHP_AUTH_PW']!= $pass || !isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] != $login)|| !$_SERVER['PHP_AUTH_USER'])
@@ -9,7 +9,7 @@ if((!isset($_SERVER['PHP_AUTH_PW']) || $_SERVER['PHP_AUTH_PW']!= $pass || !isset
     echo '<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8" /></head><body>Tên hoặc mật khẩu sai!</body></html>';
     exit;
 }
-
+*/
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../frameworks/yii/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';

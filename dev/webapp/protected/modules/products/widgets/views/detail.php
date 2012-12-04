@@ -17,7 +17,7 @@
 	<b><a href="#" onclick="$('#product-contact').show();$('#product-description').hide();return false;"><?php echo ProductsModule::t('Lợi ích'); ?></a></b>
 </div-->
 
-<div id="product-description" style="margin-bottom:30px">
+<div id="product-description" class="alert alert-info" style="margin-bottom:30px;width:680px">
 	<?php echo CHtml::encode($data->description); ?>
 </div>
 
