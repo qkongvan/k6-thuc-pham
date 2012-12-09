@@ -1,11 +1,11 @@
 .h-module-news-entries ul { clear:both;overflow:hidden;padding-left: 0px !important;margin: 0 !important; }
-.h-module-news-entries ul li { margin-bottom:10px;display:-moz-inline-stack;display:inline-block;vertical-align:top;*display:inline; }
+.h-module-news-entries ul li { margin:10px 0;display:-moz-inline-stack;display:inline-block;vertical-align:top;*display:inline; }
 .h-module-news-entries ul li a img { width: 198px; height: 132px; margin-left:5px;border:1px solid #E5E6E5;display:inline;padding:2px; }
 .h-module-news-entries ul li a img:hover, .h-module-news-entries ul li a:hover img { border:1px solid #900; }
 .h-module-news-entries ul li p { font-size:.95em;padding:0px;margin:1px; }
 .h-module-news-entries ul li h5 {margin:3px 0 0 0;}
 .h-module-news-entries .h-module-news-left-content {float:left; margin-right:10px;}
-.h-module-news-entries .h-module-news-right-content {float:left;width:700px;}
+.h-module-news-entries .h-module-news-right-content {float:left;width:600px;}
 
 .h-module-news-detail {overflow:hidden;padding:0px;}
 .h-module-news-detail h4{margin-bottom:10px;}

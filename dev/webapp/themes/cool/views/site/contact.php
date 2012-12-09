@@ -13,7 +13,9 @@ $this->breadcrumbs=array(
 <div class="body_960">
 <div class="container_16 h_module_products_shop">
 
-<div class="grid_16">
+<?php $this->renderPartial('/site/pages/_menu'); ?>
+
+<div class="grid_13">
 
 	<h2>Liên hệ</h2>
 
@@ -77,7 +79,7 @@ $this->breadcrumbs=array(
 		<?php endif; ?>
 
 		<div class="row buttons">
-			<?php echo CHtml::submitButton('Submit'); ?>
+			<?php echo CHtml::submitButton('Gửi tin'); ?>
 		</div>
 
 	<?php $this->endWidget(); ?>

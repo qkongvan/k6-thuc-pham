@@ -12,4 +12,5 @@ return array(
 	),
 	// plugin: news
 	'news',
+	'live',
 );

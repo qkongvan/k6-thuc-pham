@@ -10,5 +10,6 @@
 			</ul>
 		</li>
 		<li><?php echo CHtml::link('Doanh Nghiệp', array('/site/page', 'view'=>'dn')); ?></li>
+		<li><?php echo CHtml::link('Liên Hệ', array('/site/contact')); ?></li>
 	</ul>
 </div>
