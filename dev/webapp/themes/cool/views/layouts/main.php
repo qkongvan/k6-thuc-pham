@@ -129,7 +129,7 @@ Yii::app()->clientScript->registerCssFile(
 	swfobject.embedSWF("/images/banner.swf", "banner", "1218", "240", "9.0.0", "/images/expressInstall.swf", {}, {wmode:'transparent'});
 	CollapsibleLists.apply();
 	$(document).ready(function() {
-		setTimeout(function() { $('#headerlogo').fadeIn(); }, 1000 );
+		setTimeout(function() { $('#headerlogo').fadeIn(); }, 500 );
 	});
 </script>
 </body>
