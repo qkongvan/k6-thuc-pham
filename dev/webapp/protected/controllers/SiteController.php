@@ -66,7 +66,7 @@ class SiteController extends HController
 				Yii::import('application.extensions.phpmailer.HMailHelper');
 				$headers="From: {$model->email}\r\nReply-To: {$model->email}\n\n";
 				//mail(Yii::app()->params['adminEmail'],$model->subject,$model->body,$headers);
-				HMailHelper::Send("Contact", $headers . $model->body, array(array("huytbt@gmail.com", "HuyTBT")));
+				HMailHelper::Send("Contact", $headers . $model->body, array(array("rausachthanhphovinh@gmail.com", "Administrator")));
 				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
 				$this->refresh();
 			}
