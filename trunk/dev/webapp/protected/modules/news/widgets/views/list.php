@@ -11,7 +11,7 @@
 			</div>
 			<div class="h-module-news-right-content">
 				<h5><?php echo CHtml::link($item->title, $url); ?></h5>
-				<p><?php echo CHtml::encode($item->short_content); ?></p>
+				<p style="text-align:justify"><?php echo CHtml::encode($item->short_content); ?></p>
 			</div>
 		</li>
 	<?php endforeach; ?>

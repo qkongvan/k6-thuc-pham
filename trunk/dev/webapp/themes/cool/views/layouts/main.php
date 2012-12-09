@@ -60,7 +60,7 @@
 						array('label'=>'Giới Thiệu', 'url'=>array('/site/page', 'view'=>'about'), 'linkOptions'=>array('data-theme'=>'green')),
 		                // array('label'=>'Đối Tác', 'url'=>array('/doitac/index'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'Tin Tức', 'url'=>array('/news/index'), 'linkOptions'=>array('data-theme'=>'green')),
-						array('label'=>'Liên Hệ', 'url'=>array('/site/contact'), 'linkOptions'=>array('data-theme'=>'green')),
+						array('label'=>'Sống Khỏe', 'url'=>array('/live/index'), 'linkOptions'=>array('data-theme'=>'green')),
 						array('label'=>'Tuyển Dụng', 'url'=>array('/site/recruitment'), 'linkOptions'=>array('data-theme'=>'green')),
 		                // Module User
 						// array('label'=>Yii::app()->getModule('user')->t("Login"), 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest, 'linkOptions'=>array('data-theme'=>'green')),

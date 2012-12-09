@@ -269,7 +269,7 @@ input[type="button"]:active, input[type="submit"]:active {
 	}
 
 /* content */
-#content { float: left; width: 802px; }
+#content { /*float: left; width: 802px;*/ }
 
 	/* today's selection */
 	.todays-selection { border-bottom: #fff solid 1px; position: relative; width: 642px; }
@@ -635,8 +635,9 @@ input[type="button"]:active, input[type="submit"]:active {
 /* module products */
 .h_module_products_shop input[type="text"] { background-color: transparent; border: 0; border-bottom: #ddd solid 1px; color: #333; margin: 0px 5px; -webkit-appearance: none; }
 
-.h_module_products_shop h2 { border-bottom: #ddd solid 1px; color: #333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; height: 32px; padding: 0px 0 6px; margin:0px;
+h2 { border-bottom: #ddd solid 1px; color: #333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; height: 32px; padding: 0px 0 6px; margin:0px;
 	-moz-box-shadow: 0 1px 0 #fff; -webkit-box-shadow: 0 1px 0 #fff; box-shadow: 0 1px 0 #fff; 
+	margin-bottom: 10px;
 }
 
 .h_module_products_shop .h-module-products-entries ul li, .h_module_products_shop .h-module-products-detail {
@@ -752,3 +753,6 @@ div.form input[type="text"], div.form input[type="password"], div.form textarea,
 .alert-block p + p {
   margin-top: 5px;
 }
+
+div.h_module_products_category_tree ul { padding-left: 20px; list-style-type: circle; }
+div.h_module_products_category_tree ul ul { padding-left: 20px; list-style-type: disc; }

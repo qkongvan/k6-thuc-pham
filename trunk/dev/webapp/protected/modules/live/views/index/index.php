@@ -10,15 +10,15 @@ $this->breadcrumbs=array(
 			<div class="h_sidebar_block">
 				<h2>Danh Mục</h2>
 				<div>
-				<?php $this->widget('application.modules.news.widgets.NewsCategoriesWidget'); ?>
+				<?php $this->widget('application.modules.live.widgets.LiveCategoriesWidget'); ?>
 				</div>
 			</div>
 		</div>
 
 		<div class="grid_14" id="h-shop-items">
-			<h2>Tin Tức</h2>
+			<h2>Sống Khỏe</h2>
 			<div>
-			<?php $this->widget('application.modules.news.widgets.NewsItemsWidget'); ?>
+			<?php $this->widget('application.modules.live.widgets.LiveItemsWidget'); ?>
 			</div>
 		</div>
 
